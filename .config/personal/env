@@ -21,3 +21,8 @@ addToPathFront() {
         export PATH=$1:$PATH
     fi
 }
+
+change_background() {
+    local selected_file=$(ls ~/backgrounds | fzf)
+    feh --bg-center "$HOME/backgrounds/$selected_file"
+}

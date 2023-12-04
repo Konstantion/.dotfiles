@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$1" == "find" ]; then
+    important "$@" | fzf | xargs -I {} tmux-sessionizer "$1" "{}"
+else
+    important "$@"
+fi

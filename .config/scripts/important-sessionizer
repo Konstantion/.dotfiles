@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ ! -f ~/.important ]; then
+    echo "File ~/.important does not exist."
+    exit 1
+fi
+
+selected_command=$(cat ~/.important | fzf)
+
+if [ -n "$selected_command" ]; then
+    tmux-sessionizer "$selected_command"
+else
+    echo "No command was selected."
+fi

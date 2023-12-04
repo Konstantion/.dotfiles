@@ -1,0 +1,9 @@
+#!/bin/bash
+
+javac ~/.config/scripts/ImportantFileManager.java
+
+if [ $? -eq 0 ]; then
+    java -cp ~/.config/scripts ImportantFileManager "$@"
+else
+    echo "Compilation failed."
+fi

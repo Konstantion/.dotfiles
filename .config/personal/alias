@@ -20,12 +20,16 @@ alias pclip="xclip -selection clipboard -o"
 alias bookmap='~/bookmap/bookmap_runscript.sh'
 alias vim='nvim'
 alias goland='~/GoLand-2023.2.3/bin/goland.sh'
+
 alias idea='intellij-idea-ultimate'
 alias bmvpn='sudo openvpn --config ~/work/vpn/client.ovpn'
 alias firefox='~/utils/firefox/firefox'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+alias tms='tmux-sessionizer'
+alias itms='important-sessionizer'
 
 alias bg='feh --bg-fill ~/backgrounds/nature.png'
 

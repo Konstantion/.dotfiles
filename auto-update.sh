@@ -2,12 +2,15 @@
 
 copy_if_exists() {
   if [ -e "$1" ]; then
-    cp "$1" "$2"
+    if [ -d "$1" ]; then
+      cp -r "$1" "$2"
+    else
+      cp "$1" "$2"
+    fi
   else
-    echo "File $1 does not exist."
+    echo "File or directory $1 does not exist."
   fi
 }
-
 mkdir -p ./.config/
 
 copy_if_exists ~/.tmux.conf .
