@@ -193,3 +193,10 @@ bindsym $mod+Shift+Next exec --no-startup-id ~/.config/scripts/background-center
 exec_always --no-startup-id picom -CGb
 exec_always --no-startup-id feh --bg-center 'backgrounds/vampire.jpg'
 exec_always --no-startup-id gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+
+
+exec --no-startup-id bash -c "i3-msg 'workspace 1'; sleep 5; exec firefox; sleep 1"
+exec --no-startup-id bash -c "i3-msg 'workspace 2'; sleep 5; exec kitty; sleep 1"
+# exec --no-startup-id bash -c "i3-msg 'workspace 3'; sleep 3; exec idea; sleep 1"
+exec --no-startup-id bash -c "i3-msg 'workspace 4'; sleep 5; exec slack; sleep 1"
+exec --no-startup-id bash -c "i3-msg 'workspace 5'; sleep 5; exec youtube-music-desktop-app; sleep 1"
