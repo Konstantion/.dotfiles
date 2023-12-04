@@ -4,3 +4,6 @@
 [submodule "backgrounds"]
 	path = backgrounds
 	url = https://github.com/Konstantion/backgrounds.git
+[submodule ".config/personal/completions"]
+	path =.config/personal/completions
+	url = https://github.com/gradle/gradle-completion
