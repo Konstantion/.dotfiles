@@ -25,6 +25,11 @@ validateYaml() {
     python -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < $1
 }
 
+nhp() {
+    nohup "$@" > /dev/null 2> /dev/null &
+    disown
+}
+
 
 cat1Line() {
     cat $1 | tr -d "\n"
