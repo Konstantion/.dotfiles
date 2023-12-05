@@ -14,8 +14,8 @@ copy_if_exists() {
 mkdir -p ./.config/
 
 copy_if_exists ~/.tmux.conf .
-copy_if_exists ~/.tmux-cht-command
-copy_if_exists ~/.tmux-cht-languages
+copy_if_exists ~/.tmux-cht-command .
+copy_if_exists ~/.tmux-cht-languages .
 copy_if_exists ~/.zsh_profile .
 copy_if_exists ~/.zshrc .
 copy_if_exists ~/.zshrc.pre-oh-my-zsh .
