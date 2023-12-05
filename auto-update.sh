@@ -26,6 +26,7 @@ copy_if_exists ~/.config/kitty ./.config/
 copy_if_exists ~/.config/personal ./.config/
 copy_if_exists ~/.config/scripts ./.config/
 copy_if_exists ~/.config/picom.conf ./.config/
+copy_if_exists ~/.config/eclipse.jdt.ls ./.config/
 
 cd "$(dirname "$0")"
 
@@ -34,6 +35,7 @@ if [ ! -d .git ]; then
     exit 1
 fi
 
+git submodule update --remote
 git add -A
 
 COMMIT_MESSAGE="Update dotfiles $(date '+%Y-%m-%d %H:%M:%S')"

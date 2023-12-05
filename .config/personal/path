@@ -5,5 +5,4 @@ addToPath $HOME/kostia/utils/julia-1.8.1/bin
 addToPath $HOME/kostia/utils/firefox
 addToPath $XDG_CONFIG_HOME/scripts
 
-
 addToPathFront $JAVA_HOME/bin
