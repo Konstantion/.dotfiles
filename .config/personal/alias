@@ -32,4 +32,3 @@ alias tms='tmux-sessionizer'
 alias itms='important-sessionizer'
 
 alias bg='feh --bg-fill ~/backgrounds/nature.png'
-
