@@ -1,9 +1,12 @@
 [submodule ".config/nvim/nvim-config"]
-	path = .config/nvim/nvim-config
-	url = https://github.com/Konstantion/nvim-config.git
+    path = .config/nvim/nvim-config
+    url = https://github.com/Konstantion/nvim-config.git
 [submodule "backgrounds"]
-	path = backgrounds
-	url = https://github.com/Konstantion/backgrounds.git
+    path = backgrounds
+    url = https://github.com/Konstantion/backgrounds.git
 [submodule ".config/personal/completions"]
-	path =.config/personal/completions
-	url = https://github.com/gradle/gradle-completion
+    path =.config/personal/completions
+    url = https://github.com/gradle/gradle-completion
+[submodule ".config/eclipse.jdt.ls"]
+    path = .config/eclipse.jdt.ls
+    url = https://github.com/eclipse/eclipse.jdt.ls.git
