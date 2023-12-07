@@ -181,7 +181,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
-bindsym $mod+Shift+comma exec ~/.config/i3/scripts/alsa restore
 bindsym $mod+semicolon exec ~/.config/i3/scripts/alsa down Headphone
 bindsym $mod+comma exec ~/.config/i3/scripts/alsa up Headphone
 bindsym $mod+m move workspace to output left
@@ -200,8 +199,9 @@ exec_always --no-startup-id feh --bg-center 'backgrounds/vampire.jpg'
 exec_always --no-startup-id gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 
 
-exec --no-startup-id bash -c "i3-msg 'workspace 1'; exec firefox; sleep 5"
-exec --no-startup-id bash -c "sleep 5; i3-msg 'workspace 2'; exec kitty; sleep 5"
-exec --no-startup-id bash -c "sleep 10; i3-msg 'workspace 3'; exec kitty work; sleep 5"
-exec --no-startup-id bash -c "sleep 15; i3-msg 'workspace 4'; exec slack; sleep 5"
-exec --no-startup-id bash -c "sleep 20; i3-msg 'workspace 5'; exec youtube-music"
+bindsym $mod+Shift+m exec --no-startup-id "\
+    i3-msg 'workspace 1'; firefox & sleep 5; \
+    i3-msg 'workspace 2'; kitty & sleep 5; \
+    i3-msg 'workspace 3'; kitty work & sleep 5; \
+    i3-msg 'workspace 4'; slack & sleep 5; \
+    i3-msg 'workspace 5'; youtube-music"

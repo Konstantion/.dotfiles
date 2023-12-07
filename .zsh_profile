@@ -6,6 +6,7 @@ PERSONAL=$XDG_CONFIG_HOME/personal
 source $PERSONAL/alias
 source $PERSONAL/env
 source $PERSONAL/path
+source $PERSONAL/secret
 source $PERSONAL/completions/gradle-completion.plugin.zsh
 
 export CC="clang-12"
@@ -26,6 +27,7 @@ catr() {
 validateYaml() {
     python -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < $1
 }
+
 nhp() {
     nohup "$@" > /dev/null 2> /dev/null &
     disown

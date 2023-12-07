@@ -18,6 +18,7 @@ alias cclip="xclip -selection clipboard"
 alias pclip="xclip -selection clipboard -o"
 
 alias bookmap='~/bookmap/bookmap_runscript.sh'
+alias bookmap7.5='~/bookmap7.5/bookmap_runscript.sh'
 alias vim='nvim'
 alias goland='~/GoLand-2023.2.3/bin/goland.sh'
 
@@ -27,8 +28,7 @@ alias firefox='~/utils/firefox/firefox'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias jira='~/tools/jira_1.4.0_linux_x86_64/bin/jira'
 
 alias tms='tmux-sessionizer'
 alias itms='important-sessionizer'
-
-alias bg='feh --bg-fill ~/backgrounds/nature.png'
