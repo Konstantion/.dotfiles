@@ -19,6 +19,7 @@ copy_if_exists ~/.tmux-cht-languages .
 copy_if_exists ~/.zsh_profile .
 copy_if_exists ~/.zshrc .
 copy_if_exists ~/.zshrc.pre-oh-my-zsh .
+copy_if_exists ~/.ideavimrc .
 
 copy_if_exists ~/.config/i3 ./.config/
 copy_if_exists ~/.config/i3status ./.config/

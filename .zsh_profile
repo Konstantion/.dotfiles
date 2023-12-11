@@ -9,7 +9,7 @@ source $PERSONAL/path
 source $PERSONAL/secret
 source $PERSONAL/completions/gradle-completion.plugin.zsh
 
-export CC="clang-12"
+export CC="clang-16"
 export CXX="clang++-12"
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
