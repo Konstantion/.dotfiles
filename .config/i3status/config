@@ -13,9 +13,11 @@ general {
 
 order += "disk /"
 order += "battery all"
+order += "wireless _first_"  # Add this line for wireless IP
+order += "ethernet _first_"  # Add this line for ethernet IP
 order += "load"
 order += "tztime local"
-order += "volume master" # Add this line
+order += "volume master" # Existing line
 
 battery all {
         format = "%status %percentage %remaining"
@@ -38,5 +40,15 @@ volume master {
         device = "default"   # Default sound device
         mixer = "Master"     # Master channel
         mixer_idx = 0        # Index of the mixer
+}
+
+wireless _first_ {
+        format_up = "W: %ip (leaked hard)"
+        format_down = "W: down"
+}
+
+ethernet _first_ {
+        format_up = "E: %ip"
+        format_down = "E: down"
 }
 

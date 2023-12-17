@@ -44,7 +44,7 @@ nmap <leader>pf :action SearchEverywhere<CR>
 nmap <leader>ds :action FileStructurePopup<CR>
 nmap <leader>ws :action GotoSymbol<CR>
 nmap <leader>pv :action ActivateProjectToolWindow<CR>
-nmap <leader>gs :action Git.Menu<CR>
+map <leader>gs :action Git.Menu<CR>
 nmap <leader><leader> :action RecentFiles<CR>
 nmap <leader>ttw <Action>(ActivateTerminalToolWindow)
 nmap <leader>rtw <Action>(ActivateRunToolWindow)

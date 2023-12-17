@@ -71,12 +71,6 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
 # split in horizontal orientation
 bindsym $mod+z split h
 
@@ -191,11 +185,13 @@ bindsym $mod+Shift+slash exec --no-startup-id bash -c "kitty tmux-sessionizer"
 bindsym $mod+Shift+period exec systemctl suspend
 
 bindsym Print exec --no-startup-id ~/.config/scripts/screenshot.sh
+bindsym $mod+Shift+Right exec --no-startup-id setxkbmap us
+bindsym $mod+Shift+Left exec --no-startup-id setxkbmap ru
 bindsym $mod+Next exec --no-startup-id ~/.config/scripts/background.sh
 bindsym $mod+Shift+Next exec --no-startup-id ~/.config/scripts/background-center.sh
 
 exec_always --no-startup-id picom -CGb
-exec_always --no-startup-id feh --bg-center 'backgrounds/vampire.jpg'
+exec_always --no-startup-id feh --bg-center 'backgrounds/black.png'
 exec_always --no-startup-id gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 
 
