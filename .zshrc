@@ -124,3 +124,10 @@ if [[ -f ~/.bash_aliases ]]; then
 fi
 
 autoload -U compinit && compinit
+
+# bun completions
+[ -s "/home/kostia/.bun/_bun" ] && source "/home/kostia/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

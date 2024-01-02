@@ -32,7 +32,7 @@ load {
 }
 
 disk "/" {
-        format = "%avail"
+        format = "Anime directory: %avail "
 }
 
 volume master {
