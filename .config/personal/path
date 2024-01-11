@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-addToPath $HOME/kostia/utils/GoLand-2023.2.3/bin
-addToPath $HOME/kostia/utils/julia-1.8.1/bin
-addToPath $HOME/kostia/utils/firefox
+addToPath $HOME/.pyenv/bin
+addToPath $HOME/utils/GoLand-2023.2.3/bin
+addToPath $HOME/utils/julia-1.8.1/bin
+addToPath $HOME/utils/firefox
 addToPath $XDG_CONFIG_HOME/scripts
-addToPath $HOME/kostia/tools/jira_1.4.0_linux_x86_64/bin
+addToPath $HOME/tools/jira_1.4.0_linux_x86_64/bin
 addToPath $JAVA_HOME/bin
 addToPath $GOPATH/bin
 addToPath $HOME/.local/bin

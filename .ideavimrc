@@ -38,7 +38,6 @@ set signcolumn=yes
 set updatetime=50
 set colorcolumn=80
 
-nmap / :action Find<CR>
 nmap <leader>pg :action FindInPath<CR>
 nmap <leader>pf :action SearchEverywhere<CR>
 nmap <leader>ds :action FileStructurePopup<CR>
