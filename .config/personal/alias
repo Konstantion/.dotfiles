@@ -7,6 +7,7 @@ alias vim="$VIM"
 alias work="cd ~/work"
 alias personal="cd ~/.config/personal"
 alias wifi="nmtui"
+# alias pmd="$HOME/pmd-bin-7.0.0-rc4/bin/pmd"
 
 alias python="python3"
 alias yolo="git push origin master --force --no-verify"
@@ -32,3 +33,4 @@ alias jira='~/tools/jira_1.4.0_linux_x86_64/bin/jira'
 
 alias tms='tmux-sessionizer'
 alias itms='important-sessionizer'
+alias docker='sudo docker'

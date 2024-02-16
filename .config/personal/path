@@ -10,3 +10,4 @@ addToPath $JAVA_HOME/bin
 addToPath $GOPATH/bin
 addToPath $HOME/.local/bin
 addToPath $HOME/tools/visualvm_217/bin
+
