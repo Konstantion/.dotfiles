@@ -34,3 +34,5 @@ alias jira='~/tools/jira_1.4.0_linux_x86_64/bin/jira'
 alias tms='tmux-sessionizer'
 alias itms='important-sessionizer'
 alias docker='sudo docker'
+
+alias gpoc='git pull origin $(git branch --show-current) --rebase'
