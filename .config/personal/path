@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 addToPath $HOME/.pyenv/bin
+addToPath $HOME/.cargo/bin
 addToPath $HOME/utils/GoLand-2023.2.3/bin
 addToPath $HOME/utils/julia-1.8.1/bin
 addToPath $HOME/utils/firefox
@@ -10,4 +11,4 @@ addToPath $JAVA_HOME/bin
 addToPath $GOPATH/bin
 addToPath $HOME/.local/bin
 addToPath $HOME/tools/visualvm_217/bin
-
+addToPath $HOME/.local/share/nvim/mason/bin

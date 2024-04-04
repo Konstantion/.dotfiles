@@ -8,6 +8,7 @@ source $PERSONAL/env
 source $PERSONAL/path
 source $PERSONAL/secret
 source $PERSONAL/completions/gradle-completion.plugin.zsh
+source $HOME/.cargo/env
 
 export CC="clang-16"
 export GOPATH=$HOME/go
