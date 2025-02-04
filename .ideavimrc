@@ -14,13 +14,8 @@ nmap <leader>Y "+Y
 nmap <leader>d "_d
 vmap <leader>d "_d
 
-nmap <C-k> <Cmd>cnext<CR>zz
-nmap <C-j> <Cmd>cprev<CR>zz
-
-nmap <leader>k <Cmd>lnext<CR>zz
-nmap <leader>j <Cmd>lprev<CR>zz
-
 imap <C-j> <CR>
+imap <C-y> :action ChooseLookupItem<CR>
 map Q gq
 
 set nu
@@ -49,6 +44,8 @@ nmap <leader>ttw <Action>(ActivateTerminalToolWindow)
 nmap <leader>rtw <Action>(ActivateRunToolWindow)
 nmap <leader>dtw <Action>(ActivateDebugToolWindow)
 nmap <leader>haw <Action>(HideAllWindows)
+nmap <C-o> :action Back<CR>
+nmap <C-i> :action Forward<CR>
 
 map gi <Action>(GotoImplementation)
 map gd <Action>(GotoDeclaration)

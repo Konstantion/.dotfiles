@@ -7,15 +7,20 @@ source $PERSONAL/alias
 source $PERSONAL/env
 source $PERSONAL/path
 source $PERSONAL/secret
-source $PERSONAL/completions/gradle-completion.plugin.zsh
+source $PERSONAL/completions/gradle-completions/gradle-completion.plugin.zsh
 source $HOME/.cargo/env
 
 export CC="clang-16"
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
+export BOOKMAP_INSTALL_DIR=$HOME/bookmap/7.5/lib/
 export NODE_PATH=/usr/local/lib/node_modules
+export KOTLIN_HOME=$HOME/.sdkman/candidates/kotlin/current
 
 export WORKSPACE=$HOME/workspace
+
+export M2_HOME=/usr/local/apache-maven-3.9.7
+export PATH=$M2_HOME/bin:$PATH
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

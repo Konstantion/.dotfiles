@@ -70,7 +70,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
@@ -129,5 +132,16 @@ autoload -U compinit && compinit
 [ -s "/home/kostia/.bun/_bun" ] && source "/home/kostia/.bun/_bun"
 
 # bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+#export BUN_INSTALL="$HOME/.bun"
+#export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Add JBang to environment
+alias j!=jbang
+
+export PATH="$HOME/.jbang/bin:$PATH"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+[ -f "/home/kostia/.ghcup/env" ] && . "/home/kostia/.ghcup/env" # ghcup-env
