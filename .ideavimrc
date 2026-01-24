@@ -46,6 +46,7 @@ nmap <leader>pv :action ActivateProjectToolWindow<CR>
 map <leader>gs :action Git.Menu<CR>
 nmap <leader><leader> :action RecentFiles<CR>
 nmap <leader>ttw <Action>(ActivateTerminalToolWindow)
+nmap <leader>fw <Action>(ActivateFindToolWindow)
 nmap <leader>rtw <Action>(ActivateRunToolWindow)
 nmap <leader>dtw <Action>(ActivateDebugToolWindow)
 nmap <leader>haw <Action>(HideAllWindows)
@@ -66,7 +67,4 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 
-xmap <C-n> <Plug>NextWholeOccurrence
-xmap <C-x> <Plug>SkipOccurrence
-xmap <C-p> <Plug>RemoveOccurrence
 let g:highlightedyank_highlight_duration = "100"

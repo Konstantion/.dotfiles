@@ -21,6 +21,7 @@ font pango:monospace 15px
 for_window [class="^.*"] border pixel 3
 # class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused #287756 #ffffff #2e9ef4 #287756
+for_window [class="velox-ib-Main" title="^win.*"] floating enable
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -38,7 +39,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 # bindsym $mod+space exec "/home/theprimeagen/dotfiles/awesome-streamerrc/ThePrimeagen/tmux2"
@@ -184,11 +185,10 @@ bindsym $mod+Shift+slash exec --no-startup-id bash -c "kitty tmux-sessionizer"
 # Suspend
 bindsym $mod+Shift+period exec systemctl suspend
 
-bindsym Print exec --no-startup-id ~/.config/scripts/screenshot.sh
 bindsym $mod+Shift+Right exec --no-startup-id setxkbmap us
 bindsym $mod+Shift+Left exec --no-startup-id setxkbmap ru
-bindsym $mod+Next exec --no-startup-id ~/.config/scripts/background.sh
-bindsym $mod+Shift+Next exec --no-startup-id ~/.config/scripts/background-center.sh
+bindsym Print exec --no-startup-id flameshot gui
+bindsym Shift+Print exec --no-startup-id flameshot full --path ~/Pictures/Screenshots
 
 exec_always --no-startup-id picom -CGb
 exec_always --no-startup-id feh --bg-center 'backgrounds/black.png'

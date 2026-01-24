@@ -13,11 +13,12 @@ general {
 
 order += "disk /"
 order += "battery all"
-order += "wireless _first_"  # Add this line for wireless IP
-order += "ethernet _first_"  # Add this line for ethernet IP
+order += "wireless _first_"
+order += "ethernet _first_"
 order += "load"
 order += "tztime local"
-order += "volume master" # Existing line
+order += "volume master"
+order += "cpu_temperature 0"  # Add this line for CPU temperature
 
 battery all {
         format = "%status %percentage %remaining"
@@ -36,10 +37,10 @@ disk "/" {
 }
 
 volume master {
-        format = "♪: %volume" # Display a volume icon followed by the volume level
-        device = "default"   # Default sound device
-        mixer = "Master"     # Master channel
-        mixer_idx = 0        # Index of the mixer
+        format = "♪: %volume"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
 }
 
 wireless _first_ {
@@ -50,5 +51,10 @@ wireless _first_ {
 ethernet _first_ {
         format_up = "E: %ip"
         format_down = "E: down"
+}
+
+cpu_temperature 0 {
+        format = "CPU Temp: %degrees°C"  # Display CPU temperature in degrees Celsius
+        path = "/sys/class/thermal/thermal_zone0/temp"  # Default path to the CPU temperature sensor
 }
 

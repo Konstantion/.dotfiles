@@ -1,0 +1,23 @@
+[env]
+TERM = "alacritty"
+
+[window]
+opacity = 0.80
+padding = { x = 10, y = 10 }
+dynamic_title = true
+
+[scrolling]
+history = 10000
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "Monospace"
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+# [terminal]
+# FORCE Fish to be the shell (solves your Zsh ghost problem permanently)
+# shell = { program = "/usr/bin/fish" }
