@@ -4,7 +4,7 @@ function shot --description "Smart Screenshot: 'shot' for area, 'shot full' for 
 
     if type -q flameshot
         if contains "full" $argv
-            flameshot full --path $save_dir
+            flameshot full --clipboard --path $save_dir
             echo "Full screenshot saved to $save_dir"
         else
             flameshot gui --path $save_dir

@@ -188,7 +188,7 @@ bindsym $mod+Shift+period exec systemctl suspend
 bindsym $mod+Shift+Right exec --no-startup-id setxkbmap us
 bindsym $mod+Shift+Left exec --no-startup-id setxkbmap ru
 bindsym Print exec --no-startup-id flameshot gui
-bindsym Shift+Print exec --no-startup-id flameshot full --path ~/Pictures/Screenshots
+bindsym Shift+Print exec --no-startup-id flameshot full --clipboard --path ~/Pictures/Screenshots
 
 exec_always --no-startup-id picom -CGb
 exec_always --no-startup-id feh --bg-center 'backgrounds/black.png'
