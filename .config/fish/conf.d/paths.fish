@@ -14,4 +14,4 @@ fish_add_path $HOME/.local/share/nvim/mason/bin
 
 fish_add_path $HOME/tools/nvim-linux-x86_64/bin
 fish_add_path $HOME/tools/visualvm_*/bin
-fish_add_path $HOME/tools/firefox
+# fish_add_path $HOME/tools/firefox

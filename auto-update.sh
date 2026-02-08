@@ -18,6 +18,7 @@ copy_if_exists ~/.ideavimrc .
 
 copy_if_exists ~/.config/i3 ./.config/
 copy_if_exists ~/.config/i3status ./.config/
+copy_if_exists ~/.config/i3status-rust ./.config/
 copy_if_exists ~/.config/alacritty ./.config/
 copy_if_exists ~/.config/fish ./.config/
 
