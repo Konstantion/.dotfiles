@@ -19,7 +19,6 @@ font pango:monospace 15px
 #
 # Thanks Childz
 for_window [class="^.*"] border pixel 3
-# class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused #287756 #ffffff #2e9ef4 #287756
 for_window [class="velox-ib-Main" title="^win.*"] floating enable
 

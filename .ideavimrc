@@ -53,6 +53,7 @@ nmap <leader>haw <Action>(HideAllWindows)
 
 map gi <Action>(GotoImplementation)
 map gd <Action>(GotoDeclaration)
+map gD <Action>(GotoSuperMethod)
 map gr <Action>(ShowUsages)
 nmap <leader>vca :action ShowIntentionActions<CR>
 map ]d <Action>(GotoNextError)
